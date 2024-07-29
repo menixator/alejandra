@@ -206,7 +206,6 @@ pub fn main() -> std::io::Result<()> {
 
             if in_place {
                 eprintln!();
-                eprint!("{}", random_ad());
             }
         }
 
@@ -219,7 +218,6 @@ pub fn main() -> std::io::Result<()> {
             "Congratulations! Your code complies with the Alejandra style."
         );
         eprintln!();
-        eprint!("{}", random_ad());
     }
 
     std::process::exit(0);
