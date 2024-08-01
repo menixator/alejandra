@@ -212,13 +212,5 @@ pub fn main() -> std::io::Result<()> {
         std::process::exit(if in_place { 0 } else { 2 });
     }
 
-    if verbosity.allows_info() {
-        eprintln!();
-        eprintln!(
-            "Congratulations! Your code complies with the Alejandra style."
-        );
-        eprintln!();
-    }
-
     std::process::exit(0);
 }
